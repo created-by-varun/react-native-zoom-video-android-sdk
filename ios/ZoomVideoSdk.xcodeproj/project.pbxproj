@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D1FBD1D26AB65C3009F0468 /* RNZoomVideoSdkAudioHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1FBD1C26AB65C3009F0468 /* RNZoomVideoSdkAudioHelper.m */; };
+		5D3430502676CFAB00C70466 /* RNZoomVideoSdkSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3430402676CFAA00C70466 /* RNZoomVideoSdkSession.m */; };
+		5D3430512676CFAB00C70466 /* RNZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3430412676CFAA00C70466 /* RNZoomView.m */; };
+		5D3430522676CFAB00C70466 /* RNZoomVideoSdkUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3430432676CFAA00C70466 /* RNZoomVideoSdkUser.m */; };
+		5D3430532676CFAB00C70466 /* RNZoomViewViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3430452676CFAB00C70466 /* RNZoomViewViewManager.m */; };
+		5D3430542676CFAB00C70466 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3430492676CFAB00C70466 /* Utils.m */; };
+		5D3430552676CFAB00C70466 /* RNZoomVideoSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D34304B2676CFAB00C70466 /* RNZoomVideoSdk.m */; };
+		5D3430562676CFAB00C70466 /* RNZoomVideoSdkSessionStatisticsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D34304D2676CFAB00C70466 /* RNZoomVideoSdkSessionStatisticsInfo.m */; };
+		5D3430572676CFAB00C70466 /* RCTConvert+RNZoomVideoSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D34304F2676CFAB00C70466 /* RCTConvert+RNZoomVideoSdk.m */; };
+		5D4F0E0C26A3020F0096C4BA /* RNZoomVideoSdkVideoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F0E0B26A3020F0096C4BA /* RNZoomVideoSdkVideoStatus.m */; };
+		5D4F0E1026A306FF0096C4BA /* RNZoomVideoSdkAudioStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F0E0E26A306FE0096C4BA /* RNZoomVideoSdkAudioStatus.m */; };
+		5D718B95269CF24B009CC36C /* RNZoomVideoSdkChatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D718B93269CF24B009CC36C /* RNZoomVideoSdkChatHelper.m */; };
+		5DB22D0C26ACE23600A811B3 /* RNZoomVideoSdkVideoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB22D0A26ACE23600A811B3 /* RNZoomVideoSdkVideoHelper.m */; };
+		5DD9E17E26DEFA0200F54911 /* RNZoomVideoSdkLiveStreamHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD9E17D26DEFA0200F54911 /* RNZoomVideoSdkLiveStreamHelper.m */; };
+		5DE6B6C826CFC8A700891FD4 /* RNZoomVideoSdkShareHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6B6C626CFC8A700891FD4 /* RNZoomVideoSdkShareHelper.m */; };
+		5DE6B6D326CFD0CD00891FD4 /* RNZoomVideoSdkVideoStatisticInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6B6D126CFD0CD00891FD4 /* RNZoomVideoSdkVideoStatisticInfo.m */; };
+		5DE6B6D426CFD0CD00891FD4 /* RNZoomVideoSdkShareStatisticInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6B6D226CFD0CD00891FD4 /* RNZoomVideoSdkShareStatisticInfo.m */; };
+		5DE99DF526D274B6008FCEA8 /* RNZoomVideoSdkUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE99DF326D274B6008FCEA8 /* RNZoomVideoSdkUserHelper.m */; };
+		5DEB5912269FFDF5008F020E /* RNZoomVideoSdkChatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB5911269FFDF5008F020E /* RNZoomVideoSdkChatMessage.m */; };
+		A849D5CA27C716D5009D60B8 /* RNZoomVideoSdkCmdChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = A849D5C927C716D5009D60B8 /* RNZoomVideoSdkCmdChannel.m */; };
+		A849D5CD27C74F25009D60B8 /* RNZoomVideoSdkRecordingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A849D5CB27C74F25009D60B8 /* RNZoomVideoSdkRecordingHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58B511D91A9E6C8500147676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		134814201AA4EA6300B7C361 /* libZoomVideoSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZoomVideoSdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1FBD1B26AB65AE009F0468 /* RNZoomVideoSdkAudioHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkAudioHelper.h; sourceTree = "<group>"; };
+		5D1FBD1C26AB65C3009F0468 /* RNZoomVideoSdkAudioHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkAudioHelper.m; sourceTree = "<group>"; };
+		5D3430402676CFAA00C70466 /* RNZoomVideoSdkSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkSession.m; sourceTree = "<group>"; };
+		5D3430412676CFAA00C70466 /* RNZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomView.m; sourceTree = "<group>"; };
+		5D3430422676CFAA00C70466 /* RNZoomVideoSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdk.h; sourceTree = "<group>"; };
+		5D3430432676CFAA00C70466 /* RNZoomVideoSdkUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkUser.m; sourceTree = "<group>"; };
+		5D3430442676CFAA00C70466 /* RNZoomVideoSdkSessionStatisticsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkSessionStatisticsInfo.h; sourceTree = "<group>"; };
+		5D3430452676CFAB00C70466 /* RNZoomViewViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomViewViewManager.m; sourceTree = "<group>"; };
+		5D3430462676CFAB00C70466 /* RCTConvert+RNZoomVideoSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+RNZoomVideoSdk.h"; sourceTree = "<group>"; };
+		5D3430472676CFAB00C70466 /* RNZoomVideoSdkSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkSession.h; sourceTree = "<group>"; };
+		5D3430482676CFAB00C70466 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		5D3430492676CFAB00C70466 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		5D34304A2676CFAB00C70466 /* RNZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomView.h; sourceTree = "<group>"; };
+		5D34304B2676CFAB00C70466 /* RNZoomVideoSdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdk.m; sourceTree = "<group>"; };
+		5D34304C2676CFAB00C70466 /* ZoomHeaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ZoomHeaders; sourceTree = "<group>"; };
+		5D34304D2676CFAB00C70466 /* RNZoomVideoSdkSessionStatisticsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkSessionStatisticsInfo.m; sourceTree = "<group>"; };
+		5D34304E2676CFAB00C70466 /* RNZoomVideoSdkUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkUser.h; sourceTree = "<group>"; };
+		5D34304F2676CFAB00C70466 /* RCTConvert+RNZoomVideoSdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+RNZoomVideoSdk.m"; sourceTree = "<group>"; };
+		5D4F0E0B26A3020F0096C4BA /* RNZoomVideoSdkVideoStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkVideoStatus.m; sourceTree = "<group>"; };
+		5D4F0E0D26A302930096C4BA /* RNZoomVideoSdkVideoStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkVideoStatus.h; sourceTree = "<group>"; };
+		5D4F0E0E26A306FE0096C4BA /* RNZoomVideoSdkAudioStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkAudioStatus.m; sourceTree = "<group>"; };
+		5D4F0E0F26A306FE0096C4BA /* RNZoomVideoSdkAudioStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkAudioStatus.h; sourceTree = "<group>"; };
+		5D718B93269CF24B009CC36C /* RNZoomVideoSdkChatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkChatHelper.m; sourceTree = "<group>"; };
+		5D718B94269CF24B009CC36C /* RNZoomVideoSdkChatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkChatHelper.h; sourceTree = "<group>"; };
+		5DB22D0A26ACE23600A811B3 /* RNZoomVideoSdkVideoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkVideoHelper.m; sourceTree = "<group>"; };
+		5DB22D0B26ACE23600A811B3 /* RNZoomVideoSdkVideoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkVideoHelper.h; sourceTree = "<group>"; };
+		5DD9E17C26DEFA0200F54911 /* RNZoomVideoSdkLiveStreamHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkLiveStreamHelper.h; sourceTree = "<group>"; };
+		5DD9E17D26DEFA0200F54911 /* RNZoomVideoSdkLiveStreamHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkLiveStreamHelper.m; sourceTree = "<group>"; };
+		5DE6B6C626CFC8A700891FD4 /* RNZoomVideoSdkShareHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkShareHelper.m; sourceTree = "<group>"; };
+		5DE6B6C726CFC8A700891FD4 /* RNZoomVideoSdkShareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkShareHelper.h; sourceTree = "<group>"; };
+		5DE6B6CF26CFD0CC00891FD4 /* RNZoomVideoSdkVideoStatisticInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkVideoStatisticInfo.h; sourceTree = "<group>"; };
+		5DE6B6D026CFD0CC00891FD4 /* RNZoomVideoSdkShareStatisticInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkShareStatisticInfo.h; sourceTree = "<group>"; };
+		5DE6B6D126CFD0CD00891FD4 /* RNZoomVideoSdkVideoStatisticInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkVideoStatisticInfo.m; sourceTree = "<group>"; };
+		5DE6B6D226CFD0CD00891FD4 /* RNZoomVideoSdkShareStatisticInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkShareStatisticInfo.m; sourceTree = "<group>"; };
+		5DE99DF326D274B6008FCEA8 /* RNZoomVideoSdkUserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkUserHelper.m; sourceTree = "<group>"; };
+		5DE99DF426D274B6008FCEA8 /* RNZoomVideoSdkUserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkUserHelper.h; sourceTree = "<group>"; };
+		5DEB5911269FFDF5008F020E /* RNZoomVideoSdkChatMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkChatMessage.m; sourceTree = "<group>"; };
+		5DEB5913269FFE20008F020E /* RNZoomVideoSdkChatMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkChatMessage.h; sourceTree = "<group>"; };
+		A849D5C827C716D5009D60B8 /* RNZoomVideoSdkCmdChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkCmdChannel.h; sourceTree = "<group>"; };
+		A849D5C927C716D5009D60B8 /* RNZoomVideoSdkCmdChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkCmdChannel.m; sourceTree = "<group>"; };
+		A849D5CB27C74F25009D60B8 /* RNZoomVideoSdkRecordingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomVideoSdkRecordingHelper.m; sourceTree = "<group>"; };
+		A849D5CC27C74F25009D60B8 /* RNZoomVideoSdkRecordingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomVideoSdkRecordingHelper.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58B511D81A9E6C8500147676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134814211AA4EA7D00B7C361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134814201AA4EA6300B7C361 /* libZoomVideoSdk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58B511D21A9E6C8500147676 = {
+			isa = PBXGroup;
+			children = (
+				A849D5CC27C74F25009D60B8 /* RNZoomVideoSdkRecordingHelper.h */,
+				A849D5CB27C74F25009D60B8 /* RNZoomVideoSdkRecordingHelper.m */,
+				A849D5C827C716D5009D60B8 /* RNZoomVideoSdkCmdChannel.h */,
+				A849D5C927C716D5009D60B8 /* RNZoomVideoSdkCmdChannel.m */,
+				5D3430462676CFAB00C70466 /* RCTConvert+RNZoomVideoSdk.h */,
+				5D34304F2676CFAB00C70466 /* RCTConvert+RNZoomVideoSdk.m */,
+				5D3430422676CFAA00C70466 /* RNZoomVideoSdk.h */,
+				5D34304B2676CFAB00C70466 /* RNZoomVideoSdk.m */,
+				5D3430472676CFAB00C70466 /* RNZoomVideoSdkSession.h */,
+				5D3430402676CFAA00C70466 /* RNZoomVideoSdkSession.m */,
+				5D3430442676CFAA00C70466 /* RNZoomVideoSdkSessionStatisticsInfo.h */,
+				5D34304D2676CFAB00C70466 /* RNZoomVideoSdkSessionStatisticsInfo.m */,
+				5DE6B6D026CFD0CC00891FD4 /* RNZoomVideoSdkShareStatisticInfo.h */,
+				5DE6B6D226CFD0CD00891FD4 /* RNZoomVideoSdkShareStatisticInfo.m */,
+				5DE6B6CF26CFD0CC00891FD4 /* RNZoomVideoSdkVideoStatisticInfo.h */,
+				5DE6B6D126CFD0CD00891FD4 /* RNZoomVideoSdkVideoStatisticInfo.m */,
+				5D34304E2676CFAB00C70466 /* RNZoomVideoSdkUser.h */,
+				5D3430432676CFAA00C70466 /* RNZoomVideoSdkUser.m */,
+				5DE99DF426D274B6008FCEA8 /* RNZoomVideoSdkUserHelper.h */,
+				5DE99DF326D274B6008FCEA8 /* RNZoomVideoSdkUserHelper.m */,
+				5D718B94269CF24B009CC36C /* RNZoomVideoSdkChatHelper.h */,
+				5D718B93269CF24B009CC36C /* RNZoomVideoSdkChatHelper.m */,
+				5DEB5913269FFE20008F020E /* RNZoomVideoSdkChatMessage.h */,
+				5DEB5911269FFDF5008F020E /* RNZoomVideoSdkChatMessage.m */,
+				5D4F0E0F26A306FE0096C4BA /* RNZoomVideoSdkAudioStatus.h */,
+				5D4F0E0E26A306FE0096C4BA /* RNZoomVideoSdkAudioStatus.m */,
+				5D1FBD1C26AB65C3009F0468 /* RNZoomVideoSdkAudioHelper.m */,
+				5D1FBD1B26AB65AE009F0468 /* RNZoomVideoSdkAudioHelper.h */,
+				5DB22D0B26ACE23600A811B3 /* RNZoomVideoSdkVideoHelper.h */,
+				5DB22D0A26ACE23600A811B3 /* RNZoomVideoSdkVideoHelper.m */,
+				5D4F0E0D26A302930096C4BA /* RNZoomVideoSdkVideoStatus.h */,
+				5D4F0E0B26A3020F0096C4BA /* RNZoomVideoSdkVideoStatus.m */,
+				5DE6B6C726CFC8A700891FD4 /* RNZoomVideoSdkShareHelper.h */,
+				5DE6B6C626CFC8A700891FD4 /* RNZoomVideoSdkShareHelper.m */,
+				5DD9E17C26DEFA0200F54911 /* RNZoomVideoSdkLiveStreamHelper.h */,
+				5DD9E17D26DEFA0200F54911 /* RNZoomVideoSdkLiveStreamHelper.m */,
+				5D34304A2676CFAB00C70466 /* RNZoomView.h */,
+				5D3430412676CFAA00C70466 /* RNZoomView.m */,
+				5D3430452676CFAB00C70466 /* RNZoomViewViewManager.m */,
+				5D3430482676CFAB00C70466 /* Utils.h */,
+				5D3430492676CFAB00C70466 /* Utils.m */,
+				5D34304C2676CFAB00C70466 /* ZoomHeaders */,
+				134814211AA4EA7D00B7C361 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58B511DA1A9E6C8500147676 /* ZoomVideoSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ZoomVideoSdk" */;
+			buildPhases = (
+				58B511D71A9E6C8500147676 /* Sources */,
+				58B511D81A9E6C8500147676 /* Frameworks */,
+				58B511D91A9E6C8500147676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoomVideoSdk;
+			productName = RCTDataManager;
+			productReference = 134814201AA4EA6300B7C361 /* libZoomVideoSdk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58B511D31A9E6C8500147676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					58B511DA1A9E6C8500147676 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "ZoomVideoSdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 58B511D21A9E6C8500147676;
+			productRefGroup = 58B511D21A9E6C8500147676;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58B511DA1A9E6C8500147676 /* ZoomVideoSdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58B511D71A9E6C8500147676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A849D5CA27C716D5009D60B8 /* RNZoomVideoSdkCmdChannel.m in Sources */,
+				5DEB5912269FFDF5008F020E /* RNZoomVideoSdkChatMessage.m in Sources */,
+				5DD9E17E26DEFA0200F54911 /* RNZoomVideoSdkLiveStreamHelper.m in Sources */,
+				5D1FBD1D26AB65C3009F0468 /* RNZoomVideoSdkAudioHelper.m in Sources */,
+				5D3430532676CFAB00C70466 /* RNZoomViewViewManager.m in Sources */,
+				5D4F0E1026A306FF0096C4BA /* RNZoomVideoSdkAudioStatus.m in Sources */,
+				5D3430572676CFAB00C70466 /* RCTConvert+RNZoomVideoSdk.m in Sources */,
+				5D3430552676CFAB00C70466 /* RNZoomVideoSdk.m in Sources */,
+				5DE6B6D426CFD0CD00891FD4 /* RNZoomVideoSdkShareStatisticInfo.m in Sources */,
+				5D3430502676CFAB00C70466 /* RNZoomVideoSdkSession.m in Sources */,
+				5DB22D0C26ACE23600A811B3 /* RNZoomVideoSdkVideoHelper.m in Sources */,
+				5D718B95269CF24B009CC36C /* RNZoomVideoSdkChatHelper.m in Sources */,
+				5D3430562676CFAB00C70466 /* RNZoomVideoSdkSessionStatisticsInfo.m in Sources */,
+				A849D5CD27C74F25009D60B8 /* RNZoomVideoSdkRecordingHelper.m in Sources */,
+				5D4F0E0C26A3020F0096C4BA /* RNZoomVideoSdkVideoStatus.m in Sources */,
+				5D3430522676CFAB00C70466 /* RNZoomVideoSdkUser.m in Sources */,
+				5DE6B6C826CFC8A700891FD4 /* RNZoomVideoSdkShareHelper.m in Sources */,
+				5D3430542676CFAB00C70466 /* Utils.m in Sources */,
+				5DE6B6D326CFD0CD00891FD4 /* RNZoomVideoSdkVideoStatisticInfo.m in Sources */,
+				5DE99DF526D274B6008FCEA8 /* RNZoomVideoSdkUserHelper.m in Sources */,
+				5D3430512676CFAB00C70466 /* RNZoomView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58B511ED1A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58B511EE1A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58B511F01A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ZoomVideoSdk;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ZoomVideoSdk;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "ZoomVideoSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511ED1A9E6C8500147676 /* Debug */,
+				58B511EE1A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ZoomVideoSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511F01A9E6C8500147676 /* Debug */,
+				58B511F11A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
+}
